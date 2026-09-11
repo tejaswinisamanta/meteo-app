@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meteo App - Tejaswini Samanta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city.." required/>
-            <input type="submit" value="Search"/>
+        <form class="search-form">
+            <input type="search" 
+            placeholder="Enter a city.." 
+            required
+            class="search-form-input"
+            />
+            <input type="submit" 
+            value="Search"
+            class="search-form-button"
+            />
         </form>
     </header>
 
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>Paris</h1>
-        <p>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
             Friday 12:52, scattered clouds
             <br />
-            Humidity: 68%, Wind: 2.06km/h
+            Humidity: <strong>68%</strong> Wind: <strong>2.06km/h</strong>
         </p>
         </div>
-        <div>
-        12°C
+        <div class="weather-app-temperature-container">
+            <div class="weather-app-icon"></div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+        </div>
         </div>
     </main>
     <footer>
@@ -31,5 +47,6 @@
         and is open-sourced on <a href="https://github.com/tejaswinisamanta/meteo-app">GitHub</a> 
         and hosted on <a href="https://meteoapp-js.netlify.app/">Netlify</a>
     </footer>
+    </div>
 </body>
 </html>
